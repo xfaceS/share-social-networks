@@ -2,9 +2,9 @@
 Contributors: @mrcoder404
 Donate link: https://www.paypal.me/mrcoder8
 Tags: share, socials, networks, all socials newtorks, on click
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
+Requires at least: 6.0.0
+Tested up to: 6.0
+Stable tag: 6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,7 +38,10 @@ This plugin share current url of the page.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Fix santax errors.
+
+= 1.0.0 =
 * Released Version.
 
 == A brief Markdown Example ==

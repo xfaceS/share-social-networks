@@ -16,7 +16,7 @@
  * Plugin Name:       Share Social Networks
  * Plugin URI:        https://www.almisbah.ma/
  * Description:       This plugin is really useful for bloggers who want to share their content on social networks. The plugin allows you to share any post.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Amine Misbah
  * Author URI:        https://www.facebook.com/Xface0/
  * License:           GPL-2.0+
@@ -36,10 +36,10 @@ if ( ! defined( 'WPINC' ) ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'SHARE_SOCIALE_NETWORKS_VERSION', '1.0.0' );
-define( 'AMI_TABLE_NAME', 'ami_share_socials_settings' );
-define( 'AMI_PLUGIN_NAME', 'Share Socials Networks' );
-define( 'AMI_PLUGIN_SETTINGS_NAME', 'Share Socials Networks Settings' );
-define('AMI_PLUGIN_FOLDER_NAME','share-sociale-networks');
+define( 'SHARE_SOCIALE_NETWORKS_TABLE_NAME', 'ami_share_socials_settings' );
+define( 'SHARE_SOCIALE_NETWORKS_PLUGIN_NAME', 'Share Socials Networks' );
+define( 'SHARE_SOCIALE_NETWORKS_PLUGIN_SETTINGS_NAME', 'Share Socials Networks Settings' );
+define('SHARE_SOCIALE_NETWORKS_PLUGIN_FOLDER_NAME','share-sociale-networks');
 
 /**
  * The code that runs during plugin activation.

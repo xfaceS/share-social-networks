@@ -13,7 +13,7 @@
  */
 
 global $wpdb; 
-$items = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix.AMI_TABLE_NAME);
+$items = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix.SHARE_SOCIALE_NETWORKS_TABLE_NAME);
 
 include(sprintf("%s/../ami/check.php", dirname(__FILE__)));
 
@@ -24,11 +24,11 @@ include(sprintf("%s/../ami/check.php", dirname(__FILE__)));
 
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row align-items-center">
+        <div class="col">
             <div class="card" style="width: 100%;max-width:100%;">
                 <div class="card-body">
-                    <h3 class="card-title"><?php echo AMI_PLUGIN_SETTINGS_NAME;?></h3>
+                    <h3 class="card-title"><?php esc_html_e(SHARE_SOCIALE_NETWORKS_PLUGIN_SETTINGS_NAME);?></h3>
                     <h5 class="card-subtitle mb-2 text-muted">
                         Her you can disable or enable social network !
                     </h5>
@@ -42,10 +42,10 @@ include(sprintf("%s/../ami/check.php", dirname(__FILE__)));
                         <?php foreach ($items as $key => $item):?>  
                         <tr>
                             <td>
-                                <label class="form-check-label" for="<?php echo $item->name;?>"><?php echo $item->name;?></label>
+                                <label class="form-check-label" for="<?php esc_attr_e($item->name);?>"><?php esc_html_e($item->name);?></label>
                             </td>
                             <td>
-                                <input class="form-check-input" type="checkbox" name="<?php echo $item->name;?>" id="<?php echo $item->name;?>" value="1" <?php  if($item->status != null && $item->status==true): echo "checked"; endif;?>>
+                                <input class="form-check-input" type="checkbox" name="<?php esc_attr_e($item->name);?>" id="<?php esc_attr_e($item->name);?>" value="1" <?php  if($item->status != null && $item->status==true): esc_attr_e("checked"); endif;?>>
                             </td>
                         </tr>
                         <?php endforeach;?>
@@ -56,14 +56,9 @@ include(sprintf("%s/../ami/check.php", dirname(__FILE__)));
                 <hr>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col">
             <div class="card" style="width: 100%;">
                 <div class="card-body">
-                    <div class="w-100 bg-ami">
-                        <a href="https://www.almisbah.ma" target="_blank" rel="noopener noreferrer">
-                            <img class="ami-logo" src="<?php echo plugins_url("/".AMI_PLUGIN_FOLDER_NAME."/admin/images/logo.png");?>" alt="logo-AMI">
-                        </a>
-                    </div>
                     <p class="card-text mb-2 text-muted mt-3">
                         We are a web agency that offers website design, mobile development, digital internet marketing and <strong>Make Wordpress Plugins</strong>.
                     </p>

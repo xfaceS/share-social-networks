@@ -39,7 +39,7 @@ define( 'SHARE_SOCIALE_NETWORKS_VERSION', '1.0.0' );
 define( 'SHARE_SOCIALE_NETWORKS_TABLE_NAME', 'ami_share_socials_settings' );
 define( 'SHARE_SOCIALE_NETWORKS_PLUGIN_NAME', 'Share Socials Networks' );
 define( 'SHARE_SOCIALE_NETWORKS_PLUGIN_SETTINGS_NAME', 'Share Socials Networks Settings' );
-define('SHARE_SOCIALE_NETWORKS_PLUGIN_FOLDER_NAME','share-sociale-networks');
+define( 'SHARE_SOCIALE_NETWORKS_PLUGIN_FOLDER_NAME','share-sociale-networks');
 
 /**
  * The code that runs during plugin activation.

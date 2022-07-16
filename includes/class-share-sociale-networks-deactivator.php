@@ -31,7 +31,7 @@ class Share_Sociale_Networks_Deactivator {
 	 */
 	public static function deactivate() {
 		global $wpdb;
-		$table_name = $wpdb->prefix . AMI_TABLE_NAME;
+		$table_name = $wpdb->prefix . SHARE_SOCIALE_NETWORKS_TABLE_NAME;
 		$sql = "DROP TABLE IF EXISTS $table_name";
 		$wpdb->query($sql);
 	}

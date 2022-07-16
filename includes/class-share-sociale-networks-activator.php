@@ -32,7 +32,7 @@ class Share_Sociale_Networks_Activator {
 	public static function activate() {
 		global $wpdb;
 		$charset_collate = $wpdb->get_charset_collate();
-		$table_name = $wpdb->prefix . AMI_TABLE_NAME;
+		$table_name = $wpdb->prefix . SHARE_SOCIALE_NETWORKS_TABLE_NAME;
 
 		$sql = "CREATE TABLE $table_name (
 			id BIGINT( 20 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
